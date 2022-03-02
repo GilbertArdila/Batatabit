@@ -238,17 +238,7 @@ main{
     font-weight: 300;
     color: var(--warm-black);
 }
-.arrows .right-arrow{
-    position: absolute;
-    right: 10px;
-    top:calc(50% );
-}
-.arrows .left-arrow{
-    position: absolute;
-    left: 10px;
-    top:calc(50% );
-    transform: rotate(180deg);
-}
+
 .main-product-detail{
     position: relative;
     width: 100%;
@@ -397,10 +387,10 @@ main{
     position: relative;
     scroll-snap-align: center;
     width: 70%;
-    min-width: 230px;
+    min-width: 190px;
     max-width: 300px;
     height: 250px;
-    margin: 50px 20px 0;
+    margin: 50px 5px 0;
     padding:0 15px;
     background-color: var(--just-white);
     border-radius: 15px;
@@ -476,17 +466,7 @@ main{
    vertical-align: text-bottom;
 }
 
-.plans-arrows .plans-right-arrow{
-    position:absolute;
-    right: 10px;
-    top:calc(50% );
-}
-.plans-arrows .plans-left-arrow{
-    position: absolute;
-    left: 10px;
-    top:calc(50% );
-    transform: rotate(180deg);
-}
+
 .main-product-detail{
     position: relative;
     width: 100%;
@@ -495,3 +475,30 @@ main{
     padding: 20px 10px;
     background-color: var(--warm-black);
 }
+footer{
+    display: flex;
+    width: 100%;
+    height: 150px;
+    background-color: var(--bitcoin-orange);
+}
+footer section{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer .left .footer-ul{
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    list-style: none;
+}
+footer .left .footer-ul li{
+    margin: 10px 0;
+}
+footer .left .footer-ul li a{
+    text-decoration: none;
+    color: var(--just-white);
+
+}
+
