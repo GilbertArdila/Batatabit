@@ -155,15 +155,24 @@ main{
 .container-comisiones> p{
     color: var(--secondary-blue);
 }
+.main-tables-container{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+}
 
 .main-tables-container .main-tables-container--monedas,
 .main-tables-container--comisiones{
     display: grid;
     grid-template-columns: 1fr 1fr;
+    scroll-snap-align: center;
     width: 70%;
     min-width: 235px;
     max-width: 500px;
-    margin: 0 auto;
+    margin: 0 20px;
     font-family: 'Inter',sans-serif;
 }
 .main-tables-container--monedas p,
@@ -229,6 +238,17 @@ main{
     font-weight: 300;
     color: var(--warm-black);
 }
+.arrows .right-arrow{
+    position: absolute;
+    right: 10px;
+    top:calc(50% );
+}
+.arrows .left-arrow{
+    position: absolute;
+    left: 10px;
+    top:calc(50% );
+    transform: rotate(180deg);
+}
 .main-product-detail{
     position: relative;
     width: 100%;
@@ -271,7 +291,7 @@ main{
     width: 90%;
     min-width: 288px;
     max-width: 400px;
-    height: 150px;
+    min-height: 150px;
     margin: 15px auto;
     padding: 15px;
     background-color:var(--black) ;
@@ -313,4 +333,165 @@ main{
     font-weight: 500;
     line-height: 1.8rem;
     color: #808080;
+}
+.bitcoin-img-container{
+    width: 100%;
+    min-width: 320px;
+    height: 50vh;
+    background-image: url('./assets/img/bitcoinbaby2x.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+.bitcoin-img-container h2{
+    padding-top: 60px;
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 2.6rem;
+    color: var(--just-white);
+}
+.plans-container{
+    width: 100%;
+    min-width: 320px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 70px;
+    text-align: center;
+   
+}
+.plans-container .title{
+    width: 90%;
+    min-width: 288px;
+    height: auto;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+.plans-container .title h2{
+    padding-top: 50px;
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 2.6rem;
+    color: var(--black);
+   
+    
+}
+.plans-container .title p{
+    padding-top: 30px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: #757575;
+    
+}
+.plans-container-slider{
+    position: relative;
+    display: flex;
+    height: 316px;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+}
+.plans-container__card{
+    position: relative;
+    scroll-snap-align: center;
+    width: 70%;
+    min-width: 230px;
+    max-width: 300px;
+    height: 250px;
+    margin: 50px 20px 0;
+    padding:0 15px;
+    background-color: var(--just-white);
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(89,73,30,0.16);
+}
+.card-recomendado_boton{
+    position: absolute;
+    width: 100px;
+    left: calc(50% - 50px);
+    top: -10px;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    padding: 5px;
+    border: 0;
+    border-radius: 8px;
+    background-color: var(--bitcoin-orange);
+    color: var(--just-white);
+}
+.plans-container__card .parrafos{
+ padding-top: 30px;
+}
+.plans-container__card h3{
+   padding-top: 30px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: var(--black);
+}
+.plans-container__card .parrafos p:nth-child(2){
+    padding: 5px 0;
+    font-size: 5.2rem;
+    font-weight: bold;
+    line-height: 5.3rem;
+    color: var(--black);
+}
+.plans-container__card .parrafos p>span{
+    font-weight: 300;
+    font-size: 1.2rem;
+    vertical-align: text-top;
+}
+.plans-container__card .parrafos p:nth-child(3){
+  font-size: 1.2rem;
+  color: #757575;
+}
+.card-escoger_boton{
+    width: 150px;
+    height: 48px;
+    margin: 0 auto;
+
+    margin-top: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3px;
+    background-color: #faf8f7;
+    border: 2px solid var(--bitcoin-orange);
+    border-radius: 4px;
+    font-size: 1.4rem;
+    font-weight: bold;
+    font-family: 'DM Sans',sans-serif;
+    line-height: 1.8rem;
+    color: var(--black);
+    text-decoration: none;
+}
+.card-escoger_boton span{
+   display: inline-block;
+   width: 20px;
+   height: 20px;
+   background-image: url('./assets/icons/orange-right-arrow.svg');
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   vertical-align: text-bottom;
+}
+
+.plans-arrows .plans-right-arrow{
+    position:absolute;
+    right: 10px;
+    top:calc(50% );
+}
+.plans-arrows .plans-left-arrow{
+    position: absolute;
+    left: 10px;
+    top:calc(50% );
+    transform: rotate(180deg);
+}
+.main-product-detail{
+    position: relative;
+    width: 100%;
+    min-width: 320px;
+    height: auto;
+    padding: 20px 10px;
+    background-color: var(--warm-black);
 }
