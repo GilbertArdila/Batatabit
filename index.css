@@ -216,7 +216,14 @@ main{
 .main-tables-container .main-tables-container--monedas p span img{
     margin-left: 10px;
 }
-
+.main-tables-container--monedas .logo {
+    display: flex;
+    justify-content:space-between ;
+}
+.main-tables-container--monedas .logo img{
+    width: 16px;
+    height: 16px;
+}
 .main-tables-container--info,
 .main-tables-container--info-coins{
     width: 190px;
