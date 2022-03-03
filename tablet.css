@@ -1,0 +1,37 @@
+@media (min-width:576px){
+    .main-tables-container{
+        overflow-x:hidden;
+        overscroll-behavior-x:unset;
+        scroll-snap-type: none;
+       justify-content: center;
+    }
+    .main-tables-container .main-tables-container--monedas,
+    .main-tables-container--comisiones{
+    scroll-snap-align:none;
+}
+ .plans-container__card{
+   margin:30px 50px;
+}
+}
+@media (min-width:1024px){
+    .main-tables-container{
+    flex-direction: column;
+    }
+    .container-monedas,
+    .container-comisiones{
+        margin: 0 auto;
+    }
+    .product-cards-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .plans-container-slider{
+         justify-content: center;
+        overflow-x: hidden;
+        overscroll-behavior-x: unset;
+        scroll-snap-type: none;
+    }
+    .plans-container__card{
+        scroll-snap-align: none;
+    }
+}
