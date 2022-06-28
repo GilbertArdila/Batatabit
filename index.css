@@ -74,7 +74,8 @@ header img{
      margin-top:35px;
      padding: 15px;
      width: 229px;
-     height: 48px;
+     height:auto;
+     min-height: 48px;
      background-color: var(--off-white);
      box-shadow: 0 4px 8px rgba(89,73,30,0.16);
      border: none;
@@ -226,7 +227,8 @@ main{
 }
 .main-tables-container--info,
 .main-tables-container--info-coins{
-    width: 190px;
+    width:auto;
+    min-width: 190px;
     height: 30px;
     margin: 0 auto;
     margin-top: 15px;
@@ -405,7 +407,8 @@ main{
 }
 .card-recomendado_boton{
     position: absolute;
-    width: 100px;
+    width:auto;
+    min-width: 100px;
     left: calc(50% - 50px);
     top: -10px;
     font-size: 1.2rem;
